@@ -18,6 +18,10 @@ public class CalculatorTest {
         Assertions.assertEquals(35,calculator.add("20 5 10"));
 
         Assertions.assertEquals(50,calculator.add("50 "));
+
+        Assertions.assertEquals(75,calculator.add("50/5/20"));
+        Assertions.assertEquals(75,calculator.add("50#5#20"));
+
     }
     @Test
     public void ignoreMore1000() throws Exception {
