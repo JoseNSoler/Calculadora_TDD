@@ -22,6 +22,8 @@ public class CalculatorTest {
         Assertions.assertEquals(75,calculator.add("50/5/20"));
         Assertions.assertEquals(75,calculator.add("50#5#20"));
 
+        Assertions.assertEquals(75,calculator.add("50\n5\n20"));
+
     }
     @Test
     public void ignoreMore1000() throws Exception {
